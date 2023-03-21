@@ -1,0 +1,33 @@
+What is Redux?
+
+-> Redux is a state management library for JavaScript applications.
+
+-> In other words, redux is used to manage the data or state of complex JavaScript applications
+
+-> all states are stored in a java script object namely "store"
+
+-> store can be assumed as a database for frontend
+
+-> state management tools (help in syncing the state throughout the app)
+
+-> Ex :- "Flux, MobX, Redux" among which Redux is most popular tool
+
+-> Redux is compatible with React, Angular, Vue, Vanilla JS
+
+-> pros of Redux :-
+    -> Centralize application's state
+    -> Data-flow transparent
+    -> Easily debug applications
+    -> Preserve the page state
+
+-> cons of Redux :-
+    -> Very complex (many dev feels as it implements functional programming) (solved)
+    -> write a lot of boiler plate code (Traditional way ..... > Modern way) (solved)
+
+-> Redux usecases :-
+    -> Complex UI in terms of data like facebook, amazon
+    -> Data flow is complex
+
+-> not to use Redux :-
+    -> Small or medium size of applications
+    -> Simple UI & Static data
