@@ -1,0 +1,40 @@
+-> In JS, we treat the functions as any other variable.
+    -> Like
+        -> assign them in variable
+        -> pass them as arguments
+        -> return them from another functional
+        -> Hence JS functions are called first-class objects or first-class citizens
+
+-> Higher-Order Function
+    -> A higher-order function is a function which takes function as a parameter or which returns the function or both
+
+-> Currying in JS
+    -> Currying is a technique that allows us to take multiple arguments of function and
+         convert it into a function that has single argument
+
+-> Pure Functions
+    -> Pure function is a function which always give same output if we give it the same input.
+    -> No current date/time
+    -> No random values
+    -> No global state
+    -> No database calls
+
+    -> Benifits
+        -> Easy to test
+        -> Easy to reuse
+        -> Self explanatory
+
+-> Immutability
+    -> Once we create variable or string or object or array, it cannot be changed.
+    -> If you want to change that, we have to make copy first of that data and then update that copy.
+    -> Increase the predictability
+    -> Faster change detection
+
+        -> immutability in Objects
+            -> Object.assign method
+            -> Using spread operator
+
+        -> immutability in Arrays
+            -> Adding an item
+            -> Removing an item
+            -> Updating an item

@@ -1,0 +1,19 @@
+-> Functional programming is one of the type of programming paradigms
+
+Programming Paradigms
+
+-> Programming paradigms are the methods or we can say a set of rules to structure our code and to solve a problem
+
+-> 4 types -> Procedural, Logical, Functional, Object-oriented programmings
+
+-> Functional programming -> having small functions clubbed to form more complex functions
+
+-> Benifits
+
+    -> More readable
+    -> More reusable
+    -> Easier to debug
+
+-> Languages specific to functional programming -> Haskell, Erlang
+
+-> JS is a multi paradigm language -> it supports OOP, Functional programmings

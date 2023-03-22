@@ -1,17 +1,24 @@
 {
-    "name": "redux-starter",
-    "version": "1.0.0",
-    "description": "Redux Starter Project",
-    "main": "index.js",
-    "scripts": {
-        "start": "webpack-dev-server --config ./webpack.config.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "webpack": "^4.41.6",
-        "webpack-cli": "3.3.11",
-        "webpack-dev-server": "^3.10.3"
-    }
+  "name": "redux-starter",
+  "version": "1.0.0",
+  "description": "Redux Starter Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "lodash": "^4.17.21",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "dependencies": {
+    "immer": "^9.0.19"
+  }
 }
