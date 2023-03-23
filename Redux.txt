@@ -31,3 +31,46 @@ What is Redux?
 -> not to use Redux :-
     -> Small or medium size of applications
     -> Simple UI & Static data
+
+-> How redux works
+    -> One application has only one single store
+    -> Reducer takes the current state as argument and return the updated state.
+    -> The reducer doesn't make any HTTP calls or change DOM elements, hence it doesn't create any kind of side effects
+        They just take in the state as param and return the updated state. Hence we call them pure functions
+    -> In reducer, we update the state with spread operator or immer library.
+    -> By using action parameter we can tell reducer which task they have to perform.
+
+    ex :- const reducer = (state,action) => {}
+
+-> Steps for implementing redux
+    -> Designing the store
+    -> List our actions (what to do)
+    -> Create reducer function (How to do)
+    -> Create redux store
+    -> don't name the high level folder as redux(name something like store as below),
+         as we don't want the folder name and package name to be same.
+    -> Folder Structure
+        -> scr
+            -> store
+                -> store.js
+                -> tasks
+                    -> actions.js
+                    -> reducer.js
+                    -> actionTypes.js or constants.js
+                -> employees
+                    -> actions.js
+                    -> reducer.js
+                    -> actionTypes.js or constants.js
+    -> Duck Module structure
+        -> scr
+            -> store
+                -> store.js
+                -> tasks.js
+                -> employees.js
+
+-> Redux Thunk
+    -> In programming term, thunk is "a piece of code that does some delay work".
+    -> Rather than run the logic now, we can write code that can be used to perform the work later.
+    -> We cannot insert async for action methods, which will error out as actions must be plain objects.
+        Thhunk helps us solve this
+    -> So, with thunk we can write asyn logic and complex logic in redux.

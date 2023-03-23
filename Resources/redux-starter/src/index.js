@@ -5,7 +5,7 @@
 //Modified
 
 // import { compose, pipe } from "lodash/fp";
-import { produce } from "immer";
+// import { produce } from "immer";
 
 // let userName = " Yash ";
 //Traditional way
@@ -108,3 +108,30 @@ import { produce } from "immer";
 // const newBookArray = arrayOfBooks.map((el) => (el === "Book2" ? "Book4" : el));
 
 // console.log(newBookArray);
+
+// Redux implementation
+
+import store from "./store/store";
+import {
+  addTask,
+  completedTask,
+  fetchTodo,
+  removeTask,
+} from "./store/tasks/action";
+
+// Logs whenever there is a change in the state data
+const unsubscribe = store.subscribe(() => {
+  console.log("Updated", store.getState());
+});
+
+store.dispatch(addTask("Task 1"));
+store.dispatch(addTask("Task 2"));
+
+// Once we unsubscribe, we don't get further notification from store
+// unsubscribe();
+
+// console.log(store.getState());
+store.dispatch(removeTask(1));
+// console.log(store.getState());
+store.dispatch(completedTask(2));
+store.dispatch(fetchTodo());
