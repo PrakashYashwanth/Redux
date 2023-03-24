@@ -89,3 +89,6 @@ What is Redux?
     -> Middleware is a function which run between the action and reducer.
     -> Customised middleware (ex:- the log middleware we created)
     -> Redux-Logger middleware
+
+-> API in Redux
+    -> can be called by simple function, async thunk, custom api middleware....(any one of these can be used based on our interest)
