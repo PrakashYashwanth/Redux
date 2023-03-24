@@ -169,9 +169,9 @@ import { addTask, completedTask, removeTask } from "./store/tasks";
 import { addEmployee, removeEmployee } from "./store/employees";
 
 // Logs whenever there is a change in the state data
-const unsubscribe = store.subscribe(() => {
-  console.log("Updated", store.getState());
-});
+// const unsubscribe = store.subscribe(() => {
+//   console.log("Updated", store.getState());
+// });
 
 store.dispatch(addTask({ task: "Task 1" }));
 store.dispatch(addTask({ task: "Task 2" }));
@@ -188,4 +188,6 @@ store.dispatch(completedTask({ id: 2 }));
 store.dispatch(addEmployee({ name: "Harley" }));
 store.dispatch(addEmployee({ name: "David" }));
 store.dispatch(removeEmployee({ id: 1 }));
-unsubscribe();
+// Logging error
+store.dispatch({ type: "SHOW_ERROR", payload: { error: "Server Error" } });
+// unsubscribe();
