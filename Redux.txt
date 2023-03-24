@@ -74,3 +74,9 @@ What is Redux?
     -> We cannot insert async for action methods, which will error out as actions must be plain objects.
         Thhunk helps us solve this
     -> So, with thunk we can write asyn logic and complex logic in redux.
+
+-> Redux Dev tools
+    -> Configure the redux dev tools
+    -> See actions which we perform
+    -> Trace actions
+    -> Import and export log file

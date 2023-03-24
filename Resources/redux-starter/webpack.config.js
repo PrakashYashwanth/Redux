@@ -10,6 +10,7 @@ module.exports = {
     static: path.join(__dirname, "dist"),
     port: 3000,
   },
+  devtool: "source-map",
   mode: "development",
   module: {
     rules: [
