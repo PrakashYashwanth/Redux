@@ -80,3 +80,7 @@ What is Redux?
     -> See actions which we perform
     -> Trace actions
     -> Import and export log file
+
+-> Best way to create Redux applications (Redux Toolkit)
+    -> This library helps us prevent writing a lot of boilier plate code
+    -> Officially recommended by redux
