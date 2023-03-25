@@ -216,7 +216,7 @@
 
 // import { apiCallBegan } from "./store/api";
 import store from "./store/configureStore";
-import { addNewTask, loadTasks, updateTask } from "./store/tasks";
+import { addNewTask, deleteTask, loadTasks, updateTask } from "./store/tasks";
 // import axios from "axios";
 // import { fetchTasks } from "./store/tasks";
 
@@ -236,6 +236,8 @@ import { addNewTask, loadTasks, updateTask } from "./store/tasks";
 
 store.dispatch(loadTasks());
 
-// store.dispatch(addNewTask({ task: "This is new task" }));
+store.dispatch(addNewTask({ task: "This is new task" }));
 
-store.dispatch(updateTask({ id: 1, completed: false }));
+// store.dispatch(updateTask({ id: 1, completed: false }));
+
+store.dispatch(deleteTask({ id: 3 }));
