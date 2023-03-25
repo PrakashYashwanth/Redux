@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+// import axios from "axios";
+// Instead of axios we import this one below
+import axios from "../utils/http";
 
 // With create slice
 let id = 0;
@@ -15,7 +17,9 @@ export const fetchTasks = createAsyncThunk(
   // we need to pass this rejectwithvalue function as parameter
   async (a, { rejectWithValue }) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/tasks");
+      // const response = await axios.get("http://localhost:5000/api/tasks");
+      // After setting base url in http.js file
+      const response = await axios.get("/tasks");
       return { tasks: response.data };
     } catch (error) {
       // and wrap the error object in it to see the rejected status
