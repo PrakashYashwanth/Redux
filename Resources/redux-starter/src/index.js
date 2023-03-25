@@ -214,8 +214,28 @@
 
 //Using async thunk
 
+// import { apiCallBegan } from "./store/api";
 import store from "./store/configureStore";
-import axios from "axios";
-import { fetchTasks } from "./store/tasks";
+import { addNewTask, loadTasks, updateTask } from "./store/tasks";
+// import axios from "axios";
+// import { fetchTasks } from "./store/tasks";
 
-store.dispatch(fetchTasks());
+// store.dispatch(fetchTasks());
+
+//Using custom middleware
+
+// store.dispatch({
+//   type: "apiRequest",
+//   payload: {
+//     url: "/taskss",
+//     onStart: "tasks/apiRequested",
+//     onSuccess: "tasks/getTasks",
+//     onError: "tasks/apiRequestFailed",
+//   },
+// });
+
+store.dispatch(loadTasks());
+
+// store.dispatch(addNewTask({ task: "This is new task" }));
+
+store.dispatch(updateTask({ id: 1, completed: false }));

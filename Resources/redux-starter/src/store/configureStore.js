@@ -58,8 +58,9 @@ import { configureStore } from "@reduxjs/toolkit";
 import taskReducer from "./tasks";
 import employeeReducer from "./employees";
 // import log from "../middleware/log";
-import logger from "redux-logger";
+// import logger from "redux-logger";
 import error from "./middleware/error";
+import api from "./middleware/api";
 
 // Configure store comes with dev tools enabled and also allows us to dispatch async actions which is helpful in api requests
 // If we use create store function, then we need to add a middleware for making api requesta .
@@ -72,7 +73,8 @@ const store = configureStore({
   // middleware: (getDefaultMiddleware) => [...getDefaultMiddleware(), log],
   middleware: (getDefaultMiddleware) => [
     ...getDefaultMiddleware(),
-    logger,
+    // logger,
+    api,
     error,
   ],
 });
